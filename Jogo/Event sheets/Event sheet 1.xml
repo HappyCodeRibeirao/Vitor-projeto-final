@@ -7,10 +7,16 @@
         <variable constant="0" name="moeda" sid="517262996388532" static="0" type="number">0</variable>
         <event-group description="" sid="330422919007257" title="System">
             <sub-events>
-                <event-block sid="122102897304192">
+                <event-block any="1" sid="122102897304192">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="545529501997099" type="heroi">
                             <param id="0" name="Object">espreto</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="371791057157146" type="heroi">
+                            <param id="0" name="Object">cacto</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="792868171471395" type="heroi">
+                            <param id="0" name="Object">espetinho</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -25,11 +31,18 @@
                         <action id="-16" name="Wait" sid="303392183869959" type="System">
                             <param id="0" name="Seconds">1</param>
                         </action>
-                        <action id="-26" name="Restart layout" sid="896932078432474" type="System" />
-                        <action id="-21" name="Reset global variables" sid="739853674277064" type="System" />
+                        <action disabled="1" id="-26" name="Restart layout" sid="896932078432474" type="System" />
+                        <action disabled="1" id="-21" name="Reset global variables" sid="739853674277064" type="System" />
+                        <action id="-11" name="Subtract from" sid="344608338656264" type="System">
+                            <param id="0" name="Variable">pontosvida</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="816367447905868" type="heroi">
+                            <param id="0" name="Input">0</param>
+                        </action>
                     </actions>
                 </event-block>
-                <event-block sid="115410531619672">
+                <event-block disabled="1" sid="115410531619672">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="881089026583908" type="heroi">
                             <param id="0" name="Object">cacto</param>
@@ -51,7 +64,7 @@
                         <action id="-21" name="Reset global variables" sid="683581151495859" type="System" />
                     </actions>
                 </event-block>
-                <event-block sid="289659173832779">
+                <event-block any="1" disabled="1" sid="289659173832779">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="198347021264808" type="heroi">
                             <param id="0" name="Object">espetinho</param>
@@ -447,7 +460,7 @@
                     <sub-events>
                         <event-block sid="568592863858018">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="463077610832815" type="heroi">
+                                <condition id="0" name="On collision with another object" sid="463077610832815" type="animacao">
                                     <param id="0" name="Object">gosma</param>
                                 </condition>
                                 <condition id="2" name="Is playing" sid="475637705820502" type="animacao">
@@ -461,7 +474,7 @@
                         <event-block sid="379168813425956">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="588986345752733" type="gosma">
-                                    <param id="0" name="Object">heroi</param>
+                                    <param id="0" name="Object">animacao</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -600,6 +613,60 @@
                     <actions>
                         <action id="-26" name="Restart layout" sid="872319026263970" type="System" />
                         <action id="-21" name="Reset global variables" sid="741469852789909" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="134021483928419" title="Text">
+            <sub-events>
+                <event-block sid="803247316284474">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="532423770620005" type="animacao">
+                            <param id="0" name="Object">caixaDialogo1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="967664394411952" type="talk_basic">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="915791541889868" type="Text1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="950772373702547" type="System">
+                            <param id="0" name="Seconds">2.3</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="341567683458803" type="talk_basic">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="253972130938391" type="Text1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="306468664149594" type="caixaDialogo1" />
+                    </actions>
+                </event-block>
+                <event-block bookmark="1" sid="279421376907276">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="538819769999217" type="animacao">
+                            <param id="0" name="Object">caixaDialogo2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="922682307619004" type="talk_basic2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="437328100864438" type="Text2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="771284080657011" type="System">
+                            <param id="0" name="Seconds">2.3</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="148993828613763" type="talk_basic2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="923112537221710" type="Text2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="749130014617579" type="caixaDialogo2" />
                     </actions>
                 </event-block>
             </sub-events>

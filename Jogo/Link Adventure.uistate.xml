@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Level 01</layout>
-        <layout active="1" order="1">Level 02</layout>
+        <layout active="1" order="0">Level 01</layout>
+        <layout order="1">Level 02</layout>
         <event-sheet order="2">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
@@ -24,12 +24,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/inimigos/" />
-        <folder expanded="0" path="object-folder/dialog/" />
+        <folder expanded="1" path="object-folder/dialog/" />
         <folder expanded="0" path="object-folder/GUI/" />
         <folder expanded="0" path="object-folder/objetos/" />
         <folder expanded="0" path="object-folder/platform/" />
         <folder expanded="1" path="object-folder/heroi/" />
-        <folder expanded="1" path="object-folder/bg/" />
+        <folder expanded="0" path="object-folder/bg/" />
         <folder expanded="0" path="layout-folder/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -48,6 +48,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/catarro/" />
         <folder expanded="1" path="animation-folder/mosca/" />
         <folder expanded="1" path="animation-folder/talk_basic/" />
+        <folder expanded="1" path="animation-folder/caixaDialogo1/" />
+        <folder expanded="1" path="animation-folder/caixaDialogo2/" />
+        <folder expanded="1" path="animation-folder/talk_basic2/" />
         <folder expanded="1" path="animation-folder/ataque1/" />
         <folder expanded="1" path="animation-folder/controle/" />
         <folder expanded="1" path="animation-folder/play/" />
@@ -70,6 +73,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/rocha/" />
         <folder expanded="1" path="animation-folder/animacao/" />
         <folder expanded="1" path="animation-folder/heroi/" />
+        <folder expanded="1" path="animation-folder/megamen/" />
         <folder expanded="1" path="animation-folder/sky/" />
         <folder expanded="1" path="animation-folder/nuvem/" />
         <folder expanded="1" path="animation-folder/morte/" />

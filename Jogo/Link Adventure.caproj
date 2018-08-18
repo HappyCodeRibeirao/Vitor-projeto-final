@@ -21,6 +21,7 @@
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -381,6 +382,47 @@
                         </frame>
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="Text1" sid="621226898569056">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="caixaDialogo1" sid="730826326268464">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="623603851704729" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="caixaDialogo2" sid="827005661923818">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589931301471569" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="talk_basic2" sid="354131936658586">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877542747046882" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\PC Computer - Final Fantasy XIV A Realm Reborn - Dialog Boxes\FFXIV_Text_UI\talk_basic.png">
+                            <collision-poly>
+                                <point x="0.0551471" y="0.208333" />
+                                <point x="0.5" y="0.111111" />
+                                <point x="0.941176" y="0.222222" />
+                                <point x="0.974265" y="0.5" />
+                                <point x="0.935662" y="0.756944" />
+                                <point x="0.5" y="0.840278" />
+                                <point x="0.0643382" y="0.756944" />
+                                <point x="0.0238971" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text2" sid="758128215624076">
+                <plugin id="Text" />
             </object-type>
         </object-folder>
         <object-folder name="GUI">
@@ -851,6 +893,9 @@
                     <behavior-type name="Flash" sid="417859897007086">
                         <behavior id="Flash" />
                     </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="285940643210873">
+                        <behavior id="bound" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="756381619041765" speed="5">
@@ -960,7 +1005,7 @@
                     <animation framecount="5" loop="0" name="ataque" pingpong="0" repeatcount="1" repeatto="0" sid="893668377590994" speed="8">
                         <frame duration="1" hotspotX="0.583333" hotspotY="0.836735" original-source="C:\Users\Happy Code\Desktop\imagens\ataque (2).png">
                             <collision-poly>
-                                <point x="0.7875" y="0.612245" />
+                                <point x="0.95625" y="0.744898" />
                                 <point x="0.68125" y="0.94898" />
                                 <point x="0.336458" y="0.943878" />
                                 <point x="0.2375" y="0.795918" />
@@ -973,8 +1018,8 @@
                         </frame>
                         <frame duration="1" hotspotX="0.298507" hotspotY="0.836735" original-source="C:\Users\Happy Code\Desktop\imagens\ataque (3).png">
                             <collision-poly>
-                                <point x="0.914179" y="0.5" />
-                                <point x="0.930038" y="0.693878" />
+                                <point x="1" y="0.451531" />
+                                <point x="0.980411" y="0.709184" />
                                 <point x="0.423507" y="0.959184" />
                                 <point x="0.0708955" y="0.964286" />
                                 <point x="0.268657" y="0.280612" />
@@ -989,8 +1034,8 @@
                                 <point x="0.360577" y="0.617347" />
                                 <point x="0.100962" y="0.494898" />
                                 <point x="0.432692" y="0.102041" />
-                                <point x="0.699519" y="0.267857" />
-                                <point x="0.729567" y="0.746174" />
+                                <point x="0.774038" y="0.242347" />
+                                <point x="0.924279" y="0.399235" />
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0.716418" hotspotY="0.836735" original-source="C:\Users\Happy Code\Desktop\imagens\ataque (5).png">
@@ -1000,13 +1045,13 @@
                                 <point x="0.602612" y="0.67602" />
                                 <point x="0.0671642" y="0.790816" />
                                 <point x="0.608209" y="0.229592" />
-                                <point x="0.800373" y="0.385204" />
+                                <point x="0.93097" y="0.326531" />
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0.588235" hotspotY="0.69697" original-source="C:\Users\Happy Code\Desktop\imagens\parado.png">
                             <collision-poly>
-                                <point x="0.882353" y="0.5" />
-                                <point x="0.745098" y="0.80303" />
+                                <point x="0.997549" y="0.441288" />
+                                <point x="0.757353" y="0.943181" />
                                 <point x="0.509804" y="0.833333" />
                                 <point x="0.27451" y="0.787879" />
                                 <point x="0.392157" y="0.5" />
@@ -1027,10 +1072,43 @@
                     <behavior-type name="ScrollTo" sid="112194620714294">
                         <behavior id="scrollto" />
                     </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="155311683111481">
+                        <behavior id="bound" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="142377670539196" speed="5">
                         <frame duration="1" hotspotX="0.164" hotspotY="0.508" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="megamen" sid="384141487655209">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="23" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725576048507490" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
