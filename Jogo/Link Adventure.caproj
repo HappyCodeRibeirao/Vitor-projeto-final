@@ -1,0 +1,1212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Link Adventure</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2b4rqu4he2o80</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1200</width>
+        <height>730</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">Low quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="inimigos">
+            <object-type name="espetinho" sid="714823493049920">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="257124646093548">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="835456431021300" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Items\spikes.png">
+                            <collision-poly>
+                                <point x="0.171429" y="0.532143" />
+                                <point x="0" y="1" />
+                                <point x="1" y="1" />
+                                <point x="0.832142" y="0.528571" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="espreto" sid="410038128581276">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="198131273307189">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="119086261741107" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\DLC\Assets Construct2\Items\spikes.png">
+                            <collision-poly>
+                                <point x="0.114286" y="0.485714" />
+                                <point x="0.5" y="0.528571" />
+                                <point x="0.842857" y="0.557143" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="gosma" sid="708843569171591">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="135730903807667">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="851638151209762">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="417426348889694" speed="5">
+                        <frame duration="1" hotspotX="0.509804" hotspotY="0.980392" original-source="C:\Users\Happy Code\Documents\basePackage 3 - 12\Enemies\blockerMad.png">
+                            <collision-poly>
+                                <point x="0.0392157" y="0.0392157" />
+                                <point x="0.490196" y="0" />
+                                <point x="0.941176" y="0.0588235" />
+                                <point x="1" y="0.490196" />
+                                <point x="0.941176" y="0.941176" />
+                                <point x="0.490196" y="1" />
+                                <point x="0.0588235" y="0.941176" />
+                                <point x="0" y="0.490196" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="lava" sid="920221464708762">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621150362952030" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Tiles\liquidLavaTop_mid.png">
+                            <collision-poly>
+                                <point x="0.442857" y="0.442857" />
+                                <point x="0.5" y="0.414286" />
+                                <point x="0.628571" y="0.371429" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Tiles\liquidLavaTop.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                                <point x="0.371429" y="0.371429" />
+                                <point x="0.5" y="0.414286" />
+                                <point x="0.557143" y="0.442857" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="soldado" sid="397657487294349">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="495849808351874">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="159088178457395" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\kenney_platformercharacters\PNG\Soldier\Poses\soldier_cheer1.png">
+                            <collision-poly>
+                                <point x="0.225" y="1" />
+                                <point x="0.05" y="0.145455" />
+                                <point x="0.9625" y="0.318182" />
+                                <point x="0.8625" y="0.990909" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\kenney_platformercharacters\PNG\Soldier\Poses\soldier_cheer2.png">
+                            <collision-poly>
+                                <point x="0" y="0.309091" />
+                                <point x="0.95" y="0.190909" />
+                                <point x="0.95" y="0.963636" />
+                                <point x="0" y="0.936364" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="zombie" sid="170031501311692">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="563912438210043" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\kenney_platformercharacters\PNG\Zombie\Poses\zombie_action1.png">
+                            <collision-poly>
+                                <point x="0.075" y="0.236364" />
+                                <point x="0.5" y="0.190909" />
+                                <point x="0.6625" y="0.245455" />
+                                <point x="0.8625" y="0.363636" />
+                                <point x="0.725" y="0.909091" />
+                                <point x="0.425" y="0.863636" />
+                                <point x="0.1" y="0.981818" />
+                                <point x="0.05" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\kenney_platformercharacters\PNG\Zombie\Poses\zombie_action2.png">
+                            <collision-poly>
+                                <point x="0.3" y="0.218182" />
+                                <point x="0.675" y="0.236364" />
+                                <point x="0.7125" y="0.5" />
+                                <point x="0.95" y="0.663636" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="0.927273" />
+                                <point x="0.1375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Boss" sid="695297991637484">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="606853021715483" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\alien-ufo-pack\PNG\shipYellow_manned.png">
+                            <collision-poly>
+                                <point x="0.225806" y="0.259259" />
+                                <point x="0.5" y="0" />
+                                <point x="0.75" y="0.287037" />
+                                <point x="0.83871" y="0.5" />
+                                <point x="0.895161" y="0.87963" />
+                                <point x="0.104839" y="0.87963" />
+                                <point x="0.169355" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.925926">
+                            <collision-poly>
+                                <point x="0.225806" y="0.259259" />
+                                <point x="0.5" y="0" />
+                                <point x="0.75" y="0.287037" />
+                                <point x="0.83871" y="0.5" />
+                                <point x="0.895161" y="0.87963" />
+                                <point x="0.104839" y="0.87963" />
+                                <point x="0.169355" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Esquerda" pingpong="0" repeatcount="1" repeatto="0" sid="366931100609934" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\alien-ufo-pack\PNG\shipYellow_manned_left.jpg" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Direita" pingpong="0" repeatcount="1" repeatto="0" sid="788331174935271" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="cacto" sid="231422959981272">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="868816543663513">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="102267448971204" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Items\cactus.png">
+                            <collision-poly>
+                                <point x="0.257143" y="0.592857" />
+                                <point x="0.392857" y="1" />
+                                <point x="0.614286" y="1" />
+                                <point x="0.621429" y="0.642857" />
+                                <point x="0.732143" y="0.328572" />
+                                <point x="0.471429" y="0.228571" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="caramujo" sid="298970226172867">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="670737729859807">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="713280217772188">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="914917148800605" speed="5">
+                        <frame duration="1" hotspotX="0.508772" hotspotY="0.516129" original-source="C:\Users\Happy Code\Documents\basePackage 3 - 12\Enemies\snailWalk2.png">
+                            <collision-poly>
+                                <point x="0.157895" y="0.290323" />
+                                <point x="0.491228" y="0.0645161" />
+                                <point x="0.894737" y="0.193548" />
+                                <point x="0.964912" y="0.483871" />
+                                <point x="0.982456" y="0.967742" />
+                                <point x="0.491228" y="1" />
+                                <point x="0.0526316" y="0.903226" />
+                                <point x="0.0701754" y="0.483871" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="catarro" sid="641022952784723">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="369324474576739">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="113899131265797">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="278539723124573" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Documents\basePackage 3 - 12\Enemies\slimeWalk1.png">
+                            <collision-poly>
+                                <point x="0.12" y="0.214286" />
+                                <point x="0.5" y="0.0357143" />
+                                <point x="0.8" y="0.357143" />
+                                <point x="0.82" y="0.5" />
+                                <point x="0.98" y="0.964286" />
+                                <point x="0.5" y="1" />
+                                <point x="0.02" y="0.964286" />
+                                <point x="0.02" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mosca" sid="539164412010131">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="678409140056625">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="846270011650578" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Documents\basePackage 3 - 12\Enemies\flyFly1.png">
+                            <collision-poly>
+                                <point x="0.0555556" y="0.111111" />
+                                <point x="0.5" y="0.138889" />
+                                <point x="0.944444" y="0.111111" />
+                                <point x="0.847222" y="0.5" />
+                                <point x="0.777778" y="0.555556" />
+                                <point x="0.5" y="1" />
+                                <point x="0.208333" y="0.583333" />
+                                <point x="0.138889" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.506667" hotspotY="0.516129" original-source="C:\Users\Happy Code\Desktop\Assets Construct2\Enemies\flyFly2.png">
+                            <collision-poly>
+                                <point x="0.0533333" y="0.129032" />
+                                <point x="0.493333" y="0" />
+                                <point x="0.933333" y="0.16129" />
+                                <point x="0.986667" y="0.483871" />
+                                <point x="0.84" y="0.612903" />
+                                <point x="0.493333" y="1" />
+                                <point x="0.186667" y="0.548387" />
+                                <point x="0.0266667" y="0.483871" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="dialog">
+            <object-type name="talk_basic" sid="965730310399203">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="129648678312749" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\PC Computer - Final Fantasy XIV A Realm Reborn - Dialog Boxes\FFXIV_Text_UI\talk_basic.png">
+                            <collision-poly>
+                                <point x="0.0551471" y="0.208333" />
+                                <point x="0.5" y="0.111111" />
+                                <point x="0.941176" y="0.222222" />
+                                <point x="0.974265" y="0.5" />
+                                <point x="0.935662" y="0.756944" />
+                                <point x="0.5" y="0.840278" />
+                                <point x="0.0643382" y="0.756944" />
+                                <point x="0.0238971" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="GUI">
+            <object-type name="ataque1" sid="353328812013859">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297453287531519" speed="5">
+                        <frame duration="1" hotspotX="0.55" hotspotY="0.7875" original-source="C:\Users\Happy Code\Desktop\Vitor\Game\DLC\Assets Construct2\OnScreen\lineDark44.png">
+                            <collision-poly>
+                                <point x="0.15" y="0.15" />
+                                <point x="0.5" y="0" />
+                                <point x="0.85" y="0.15" />
+                                <point x="1" y="0.5" />
+                                <point x="0.85" y="0.85" />
+                                <point x="0.5" y="1" />
+                                <point x="0.15" y="0.85" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="controle" sid="136080435691835">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="830918943215439" speed="5">
+                        <frame duration="1" hotspotX="0.504" hotspotY="0.504" original-source="C:\Users\Happy Code\Desktop\Vitor\Game\DLC\Assets Construct2\OnScreen\lineDark49.png">
+                            <collision-poly>
+                                <point x="0.00800006" y="0.328" />
+                                <point x="0.332" y="0.328" />
+                                <point x="0.338" y="0.016" />
+                                <point x="0.66" y="0.00800002" />
+                                <point x="0.678" y="0.324" />
+                                <point x="0.98" y="0.356" />
+                                <point x="0.992" y="0.676" />
+                                <point x="0.688" y="0.688" />
+                                <point x="0.668" y="0.992" />
+                                <point x="0.348" y="0.992" />
+                                <point x="0.328" y="0.672" />
+                                <point x="0" y="0.672" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="play" sid="816073957708382">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="960330966132922" speed="5">
+                        <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\GUI\play.png">
+                            <collision-poly>
+                                <point x="0.15942" y="0.15493" />
+                                <point x="0.492754" y="0" />
+                                <point x="0.84058" y="0.15493" />
+                                <point x="0.985507" y="0.492958" />
+                                <point x="0.84058" y="0.84507" />
+                                <point x="0.492754" y="0.957747" />
+                                <point x="0.173913" y="0.830986" />
+                                <point x="0.0144928" y="0.492958" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="objetos">
+            <object-type name="moedinha" sid="144791790087401">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="6" loop="1" name="moeda" pingpong="0" repeatcount="1" repeatto="0" sid="688606179842942" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Moeda II\Moeda_01.gif">
+                            <collision-poly>
+                                <point x="0.216667" y="0.25" />
+                                <point x="0.544445" y="0.0705128" />
+                                <point x="0.8" y="0.230769" />
+                                <point x="0.883333" y="0.5" />
+                                <point x="0.794444" y="0.762821" />
+                                <point x="0.5" y="0.897436" />
+                                <point x="0.222222" y="0.74359" />
+                                <point x="0.172222" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.503759" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.503759" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="moedinha2" sid="865662802490496">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="6" loop="1" name="moeda" pingpong="0" repeatcount="1" repeatto="0" sid="622216940614202" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Moeda II\Moeda_01.gif">
+                            <collision-poly>
+                                <point x="0.216667" y="0.25" />
+                                <point x="0.5" y="0.0769231" />
+                                <point x="0.8" y="0.230769" />
+                                <point x="0.883333" y="0.5" />
+                                <point x="0.794444" y="0.762821" />
+                                <point x="0.5" y="0.897436" />
+                                <point x="0.222222" y="0.74359" />
+                                <point x="0.172222" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.503759" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.503759" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="molapoinng2" sid="723987134882590">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="530286021652311">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="ligado" pingpong="0" repeatcount="1" repeatto="0" sid="459560504518442" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Items\springboardUp.png">
+                            <collision-poly>
+                                <point x="0.742858" y="0.271428" />
+                                <point x="1" y="0.342857" />
+                                <point x="0.757143" y="0.985715" />
+                                <point x="0.385714" y="1" />
+                                <point x="0.185714" y="0.814286" />
+                                <point x="0" y="0.328571" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="desligado" pingpong="0" repeatcount="1" repeatto="0" sid="982453311402333" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Documents\basePackage 3 - 12\Items\springboardDown.png">
+                            <collision-poly>
+                                <point x="0.514286" y="0.485714" />
+                                <point x="0.942857" y="0.5" />
+                                <point x="0.842857" y="0.771429" />
+                                <point x="0.728572" y="1" />
+                                <point x="0.171429" y="1" />
+                                <point x="0.142857" y="0.771429" />
+                                <point x="1.86265e-009" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="boom" sid="721658152704557">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="389594150087544" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Items\bomb.png">
+                            <collision-poly>
+                                <point x="0.171429" y="0.171429" />
+                                <point x="0.5" y="0.214286" />
+                                <point x="0.728571" y="0.271429" />
+                                <point x="0.885714" y="0.5" />
+                                <point x="0.828571" y="0.828571" />
+                                <point x="0.5" y="1" />
+                                <point x="0.185714" y="0.814286" />
+                                <point x="0.142857" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bandeiriha" sid="248345398365321">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="313406739766326">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="588689175947234" speed="3">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Assets Construct2\Items\flagRed.png">
+                            <collision-poly>
+                                <point x="0.0285714" y="0.0285714" />
+                                <point x="0.5" y="0.228571" />
+                                <point x="0.771429" y="0.228571" />
+                                <point x="0.657143" y="0.5" />
+                                <point x="0.571429" y="0.571429" />
+                                <point x="0.5" y="0.614286" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Assets Construct2\Items\flagRed2.png">
+                            <collision-poly>
+                                <point x="0.0285714" y="0.0285714" />
+                                <point x="0.5" y="0.0857143" />
+                                <point x="0.757143" y="0.242857" />
+                                <point x="0.3" y="0.5" />
+                                <point x="0.471429" y="0.471429" />
+                                <point x="0.5" y="0.471429" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite4" sid="849839556802554">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507343875840581" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Game\DLC\Assets Construct2\Items\flagBlue.png">
+                            <collision-poly>
+                                <point x="0.0285714" y="0.0285714" />
+                                <point x="0.5" y="0.228571" />
+                                <point x="0.771429" y="0.228571" />
+                                <point x="0.657143" y="0.5" />
+                                <point x="0.571429" y="0.571429" />
+                                <point x="0.5" y="0.614286" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Game\DLC\Assets Construct2\Items\flagBlue2.png">
+                            <collision-poly>
+                                <point x="0.0285714" y="0.0285714" />
+                                <point x="0.5" y="0.0857143" />
+                                <point x="0.757143" y="0.242857" />
+                                <point x="0.3" y="0.5" />
+                                <point x="0.471429" y="0.471429" />
+                                <point x="0.5" y="0.471429" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="platform">
+            <object-type name="plataformamadeira" sid="896689526322369">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="629585738532240">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="320526838902384">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292019468786371" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Tiles\bridge.png">
+                            <collision-poly>
+                                <point x="0.0285714" y="0.771429" />
+                                <point x="0.957143" y="0.785714" />
+                                <point x="0.942857" y="0.985714" />
+                                <point x="0.0285714" y="0.971429" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="plataformamadeira2" sid="120494117853303">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="903928714931789">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="174669003223724">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256852972937196" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Tiles\bridge.png">
+                            <collision-poly>
+                                <point x="0.0285714" y="0.771429" />
+                                <point x="0.957143" y="0.785714" />
+                                <point x="0.942857" y="0.985714" />
+                                <point x="0.0285714" y="0.971429" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="platformaMovimento" sid="989384937190300">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="363581682676989">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="591484195385624">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="301613944794533" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Vitor\Game\DLC\Assets Construct2\Tiles\boxEmpty.png">
+                            <collision-poly>
+                                <point x="0.0285714" y="0.0285714" />
+                                <point x="0.5" y="0" />
+                                <point x="0.971429" y="0.0285714" />
+                                <point x="1" y="0.5" />
+                                <point x="0.971429" y="0.971429" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0285714" y="0.971429" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="solo" sid="254864071068252">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="770693232317416">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\Happy Code\Desktop\Vitor\Game\DLC\Assets Construct2\Tiles\grass.png" />
+            </object-type>
+            <object-type name="solo2" sid="222537022774249">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="580252317163784">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396728073092492" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Tiles\grassRight.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="0.971429" y="0.0285714" />
+                                <point x="1" y="0.5" />
+                                <point x="0.971429" y="0.971429" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="solo3" sid="387946282862721">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="953687404928590" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Tiles\liquidLava.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite2" sid="291210613957028">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="841155078283808">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="510652578426252" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Vitor\Game\DLC\Assets Construct2\Tiles\stone.png">
+                            <collision-poly>
+                                <point x="0.0285714" y="0.0285714" />
+                                <point x="0.5" y="0" />
+                                <point x="0.971429" y="0.0285714" />
+                                <point x="1" y="0.5" />
+                                <point x="0.971429" y="0.971429" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0285714" y="0.971429" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TiledBackground" sid="586644901441235">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\Happy Code\Desktop\Vitor\Game\DLC\Assets Construct2\Bg\bg_castle.png" />
+            </object-type>
+            <object-type name="lua" sid="685100635310540">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="483856695363742">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="814829270659396" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Tiles\dirtMid.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Backgroud" sid="193405307252182">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="569240870876796" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Bg\2d-game-backgrounds-10024_imgs_10024_1.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="floorinclinado" sid="292223198430126">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="269860899748186">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="644483808202463" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Vitor\Game\DLC\Assets Construct2\Tiles\grassHillLeft.png">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="2.70084e-008" y="0.985714" />
+                                <point x="0.971429" y="0.0428571" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="graminha" sid="417901827473392">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="110376855443934" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Items\plant.png">
+                            <collision-poly>
+                                <point x="0.5" y="0.557143" />
+                                <point x="0.485714" y="0.514286" />
+                                <point x="0.471429" y="0.5" />
+                                <point x="0.5" y="1" />
+                                <point x="0.442857" y="0.557143" />
+                                <point x="0.428571" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="rocha" sid="971686519102132">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="447088056499549">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="884631594716495" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Items\rock.png">
+                            <collision-poly>
+                                <point x="0.442857" y="0.442857" />
+                                <point x="0.5" y="0.471429" />
+                                <point x="0.528571" y="0.471429" />
+                                <point x="0.642857" y="0.5" />
+                                <point x="0.942857" y="0.942857" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0714286" y="0.928571" />
+                                <point x="0.257143" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="heroi">
+            <object-type name="animacao" sid="967978359089351">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="989344700984554">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Flash" sid="417859897007086">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="756381619041765" speed="5">
+                        <frame duration="1" hotspotX="0.588235" hotspotY="0.69697" original-source="C:\Users\Happy Code\Desktop\imagens\parado.png">
+                            <collision-poly>
+                                <point x="0.921569" y="0.418478" />
+                                <point x="0.855615" y="0.712121" />
+                                <point x="0.688503" y="0.904562" />
+                                <point x="0.437723" y="0.834322" />
+                                <point x="0.162211" y="0.749012" />
+                                <point x="0.311943" y="0.440217" />
+                                <point x="0.314617" y="0.192029" />
+                                <point x="0.525401" y="0.175066" />
+                                <point x="0.769608" y="0.261034" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="6" loop="1" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="286292764287970" speed="8">
+                        <frame duration="1" hotspotX="0.425926" hotspotY="0.8" original-source="C:\Users\Happy Code\Desktop\imagens\andando (5).png">
+                            <collision-poly>
+                                <point x="0.75926" y="0.522728" />
+                                <point x="0.791667" y="0.895455" />
+                                <point x="0.189815" y="0.913636" />
+                                <point x="0.21412" y="0.670455" />
+                                <point x="0.4375" y="0.463637" />
+                                <point x="0.0833334" y="0.459091" />
+                                <point x="0.38426" y="0.0931818" />
+                                <point x="0.620371" y="0.172727" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.463415" hotspotY="0.763636" original-source="C:\Users\Happy Code\Desktop\imagens\andando (6).png">
+                            <collision-poly>
+                                <point x="0.97561" y="0.5" />
+                                <point x="0.926829" y="0.881818" />
+                                <point x="0.219512" y="0.886364" />
+                                <point x="0" y="0.204545" />
+                                <point x="0.536586" y="0.0863636" />
+                                <point x="0.777439" y="0.175" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.8" original-source="C:\Users\Happy Code\Desktop\imagens\andando (7).png">
+                            <collision-poly>
+                                <point x="0.875" y="0.45" />
+                                <point x="0.8975" y="0.879546" />
+                                <point x="0.275" y="0.881818" />
+                                <point x="0.31" y="0.627273" />
+                                <point x="0.475" y="0.418182" />
+                                <point x="0.155" y="0.440909" />
+                                <point x="0.375001" y="0.0681818" />
+                                <point x="0.7825" y="0.222728" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.512821" hotspotY="0.727273" original-source="C:\Users\Happy Code\Desktop\imagens\andando (8).png">
+                            <collision-poly>
+                                <point x="1" y="0.504546" />
+                                <point x="0.980769" y="0.893182" />
+                                <point x="0.179487" y="0.895455" />
+                                <point x="0.165064" y="0.642046" />
+                                <point x="0.445513" y="0.434091" />
+                                <point x="0.0448718" y="0.422727" />
+                                <point x="0.326923" y="0.122727" />
+                                <point x="0.826923" y="0.190909" />
+                                <point x="0.714744" y="0.381818" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.489362" hotspotY="0.727273" original-source="C:\Users\Happy Code\Desktop\imagens\andando (9).png">
+                            <collision-poly>
+                                <point x="0.925532" y="0.836364" />
+                                <point x="0.154255" y="0.881818" />
+                                <point x="0.43617" y="0.375" />
+                                <point x="0.117021" y="0.407954" />
+                                <point x="0.37234" y="0.0772727" />
+                                <point x="0.675531" y="0.0818182" />
+                                <point x="0.824468" y="0.245454" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.477273" hotspotY="0.745455" original-source="C:\Users\Happy Code\Desktop\imagens\andando (10).png">
+                            <collision-poly>
+                                <point x="1" y="0.640909" />
+                                <point x="0.96875" y="0.838637" />
+                                <point x="0.409091" y="0.886364" />
+                                <point x="0.258523" y="0.621591" />
+                                <point x="0.482954" y="0.420455" />
+                                <point x="0.161932" y="0.382954" />
+                                <point x="0.306818" y="0.109091" />
+                                <point x="0.602273" y="0.0409091" />
+                                <point x="0.821023" y="0.175" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="pulo" pingpong="0" repeatcount="1" repeatto="0" sid="331842141137264" speed="10">
+                        <frame duration="1" hotspotX="0.591837" hotspotY="0.878788" original-source="C:\Users\Happy Code\Desktop\imagens\pulo.png">
+                            <collision-poly>
+                                <point x="1" y="0.560606" />
+                                <point x="0.805209" y="0.724211" />
+                                <point x="0.66654" y="0.962686" />
+                                <point x="0.507463" y="0.882979" />
+                                <point x="0.409838" y="0.616376" />
+                                <point x="0.074627" y="0.5" />
+                                <point x="0.0982336" y="0.0798679" />
+                                <point x="0.32379" y="0.340909" />
+                                <point x="0.411247" y="0.070237" />
+                                <point x="0.789522" y="0.284413" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="5" loop="0" name="ataque" pingpong="0" repeatcount="1" repeatto="0" sid="893668377590994" speed="8">
+                        <frame duration="1" hotspotX="0.583333" hotspotY="0.836735" original-source="C:\Users\Happy Code\Desktop\imagens\ataque (2).png">
+                            <collision-poly>
+                                <point x="0.7875" y="0.612245" />
+                                <point x="0.68125" y="0.94898" />
+                                <point x="0.336458" y="0.943878" />
+                                <point x="0.2375" y="0.795918" />
+                                <point x="0.0625" y="0.627551" />
+                                <point x="0.36875" y="0.696428" />
+                                <point x="0.501042" y="0.348214" />
+                                <point x="0.695834" y="0.25" />
+                                <point x="0.885417" y="0.390306" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.298507" hotspotY="0.836735" original-source="C:\Users\Happy Code\Desktop\imagens\ataque (3).png">
+                            <collision-poly>
+                                <point x="0.914179" y="0.5" />
+                                <point x="0.930038" y="0.693878" />
+                                <point x="0.423507" y="0.959184" />
+                                <point x="0.0708955" y="0.964286" />
+                                <point x="0.268657" y="0.280612" />
+                                <point x="0.537313" y="0.336735" />
+                                <point x="0.589551" y="0.510204" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.461538" hotspotY="0.836735" original-source="C:\Users\Happy Code\Desktop\imagens\ataque (4).png">
+                            <collision-poly>
+                                <point x="0.701923" y="0.979592" />
+                                <point x="0.3125" y="0.979592" />
+                                <point x="0.360577" y="0.617347" />
+                                <point x="0.100962" y="0.494898" />
+                                <point x="0.432692" y="0.102041" />
+                                <point x="0.699519" y="0.267857" />
+                                <point x="0.729567" y="0.746174" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.716418" hotspotY="0.836735" original-source="C:\Users\Happy Code\Desktop\imagens\ataque (5).png">
+                            <collision-poly>
+                                <point x="0.966418" y="0.994898" />
+                                <point x="0.615672" y="0.979592" />
+                                <point x="0.602612" y="0.67602" />
+                                <point x="0.0671642" y="0.790816" />
+                                <point x="0.608209" y="0.229592" />
+                                <point x="0.800373" y="0.385204" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.588235" hotspotY="0.69697" original-source="C:\Users\Happy Code\Desktop\imagens\parado.png">
+                            <collision-poly>
+                                <point x="0.882353" y="0.5" />
+                                <point x="0.745098" y="0.80303" />
+                                <point x="0.509804" y="0.833333" />
+                                <point x="0.27451" y="0.787879" />
+                                <point x="0.392157" y="0.5" />
+                                <point x="0.333333" y="0.257576" />
+                                <point x="0.509804" y="0.181818" />
+                                <point x="0.686275" y="0.242424" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="heroi" sid="147839769723252">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="649434614843961">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="112194620714294">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="142377670539196" speed="5">
+                        <frame duration="1" hotspotX="0.164" hotspotY="0.508" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="bg">
+            <object-type name="sky" sid="460988516372216">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="sky" pingpong="0" repeatcount="1" repeatto="0" sid="266760417049619" speed="2">
+                        <frame duration="1" hotspotX="0.513619" hotspotY="0.488095" original-source="C:\Users\Mauro\Desktop\imagens\4593_02.png" />
+                        <frame duration="1" hotspotX="0.513619" hotspotY="0.488095" original-source="C:\Users\Mauro\Desktop\imagens\4593_04.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="nuvem" sid="281093842477257">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="144057211718137" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Items\cloud1.png">
+                            <collision-poly>
+                                <point x="0.971429" y="0.971429" />
+                                <point x="0.5" y="0.742857" />
+                                <point x="0.142857" y="0.857143" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Items\cloud2.png">
+                            <collision-poly>
+                                <point x="0.224806" y="0.408451" />
+                                <point x="0.496124" y="0" />
+                                <point x="0.782946" y="0.394366" />
+                                <point x="0.790698" y="0.492958" />
+                                <point x="0.945736" y="0.901408" />
+                                <point x="0.496124" y="1" />
+                                <point x="0.0542636" y="0.901408" />
+                                <point x="0.108527" y="0.492958" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="C:\Users\Happy Code\Desktop\DLC\Assets Construct2\Items\cloud3.png">
+                            <collision-poly>
+                                <point x="0.155039" y="0.28169" />
+                                <point x="0.496124" y="0" />
+                                <point x="0.875969" y="0.225352" />
+                                <point x="0.976744" y="0.492958" />
+                                <point x="0.945736" y="0.901408" />
+                                <point x="0.496124" y="1" />
+                                <point x="0.0542636" y="0.901408" />
+                                <point x="0.108527" y="0.492958" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Touch" sid="997058761985346">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="morte" sid="919598475101613">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581724173325494" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="351475314794075">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="ValorMoeda" sid="768134113705248">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="1" name="moeda" pingpong="0" repeatcount="1" repeatto="0" sid="579033151740667" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\Moeda II\Moeda_01.gif">
+                        <collision-poly>
+                            <point x="0.216667" y="0.25" />
+                            <point x="0.5" y="0.0769231" />
+                            <point x="0.8" y="0.230769" />
+                            <point x="0.883333" y="0.5" />
+                            <point x="0.794444" y="0.762821" />
+                            <point x="0.5" y="0.897436" />
+                            <point x="0.222222" y="0.74359" />
+                            <point x="0.172222" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.503759" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.503759" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="igual" sid="404032323380600">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="valor" sid="133196635349586">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="vida" sid="225277438789530">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="vida" pingpong="0" repeatcount="1" repeatto="0" sid="553858950452675" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\00.png">
+                        <collision-poly>
+                            <point x="0.5" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\03.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="screan" sid="101237869694846">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="711020035540293" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Direita" sid="794738750572096">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400261556104209" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Esquerda" sid="741320239526065">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718325885704295" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pulo" sid="496704856587686">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="315360954323524" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Level 01.xml</layout>
+        <layout>Level 02.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="2">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="107" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
