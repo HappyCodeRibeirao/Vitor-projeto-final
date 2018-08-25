@@ -211,8 +211,8 @@
             <object-type name="Boss" sid="695297991637484">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="2" loop="1" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="606853021715483" speed="3">
-                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="G:\alien-ufo-pack\PNG\shipYellow_manned.png">
+                    <animation framecount="4" loop="1" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="606853021715483" speed="3">
+                        <frame duration="1" hotspotX="0.510204" hotspotY="0.90625">
                             <collision-poly>
                                 <point x="0.225806" y="0.259259" />
                                 <point x="0.5" y="0" />
@@ -223,7 +223,7 @@
                                 <point x="0.169355" y="0.5" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.925926">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.895833">
                             <collision-poly>
                                 <point x="0.225806" y="0.259259" />
                                 <point x="0.5" y="0" />
@@ -232,10 +232,26 @@
                                 <point x="0.895161" y="0.87963" />
                                 <point x="0.104839" y="0.87963" />
                                 <point x="0.169355" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.927083">
+                            <collision-poly>
+                                <point x="0.0535714" y="0.151042" />
+                                <point x="0.890306" y="0.184896" />
+                                <point x="0.938776" y="0.903646" />
+                                <point x="0.173469" y="0.875" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.44898" hotspotY="0.916667">
+                            <collision-poly>
+                                <point x="0.0790816" y="0.174479" />
+                                <point x="0.834184" y="0.177083" />
+                                <point x="0.857143" y="0.875" />
+                                <point x="0.155612" y="0.822917" />
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="Esquerda" pingpong="0" repeatcount="1" repeatto="0" sid="366931100609934" speed="5">
+                    <animation framecount="1" loop="0" name="Pulando" pingpong="0" repeatcount="1" repeatto="0" sid="366931100609934" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\alien-ufo-pack\PNG\shipYellow_manned_left.jpg" />
                     </animation>
                     <animation framecount="1" loop="0" name="Direita" pingpong="0" repeatcount="1" repeatto="0" sid="788331174935271" speed="5">
@@ -487,6 +503,29 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="vida" sid="225277438789530">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="vida" pingpong="0" repeatcount="1" repeatto="0" sid="553858950452675" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\00.png">
+                            <collision-poly>
+                                <point x="0.5" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\01.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\02.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\03.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="valor" sid="133196635349586">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Touch" sid="997058761985346">
+                <plugin id="Touch" />
+            </object-type>
         </object-folder>
         <object-folder name="objetos">
             <object-type name="moedinha" sid="144791790087401">
@@ -505,11 +544,11 @@
                                 <point x="0.172222" y="0.5" />
                             </collision-poly>
                         </frame>
+                        <frame duration="1" hotspotX="0.4" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.466165" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.503759" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.503759" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.451128" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.394118" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -653,6 +692,25 @@
                                 <point x="0.5" y="0.471429" />
                                 <point x="0" y="1" />
                                 <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ocarina" sid="563606841032680">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="120956459538212" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\ocarina.png">
+                            <collision-poly>
+                                <point x="0.25" y="0.388889" />
+                                <point x="0.5" y="0.333333" />
+                                <point x="0.714286" y="0.444444" />
+                                <point x="0.75" y="0.5" />
+                                <point x="0.785714" y="0.666667" />
+                                <point x="0.5" y="0.833333" />
+                                <point x="0.25" y="0.611111" />
+                                <point x="0.214286" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1082,36 +1140,6 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="megamen" sid="384141487655209">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="23" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725576048507490" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    </animation>
-                </animation-folder>
-            </object-type>
         </object-folder>
         <object-folder name="bg">
             <object-type name="sky" sid="460988516372216">
@@ -1164,9 +1192,38 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-type name="Touch" sid="997058761985346">
-            <plugin id="Touch" />
-        </object-type>
+        <object-folder name="NPC">
+            <object-type name="megamen" sid="384141487655209">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="675216498866872">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="parado" pingpong="1" repeatcount="1" repeatto="0" sid="616229905316579" speed="3">
+                        <frame duration="1" hotspotX="0.516129" hotspotY="0.509091" />
+                        <frame duration="1" hotspotX="0.451613" hotspotY="0.509091" />
+                        <frame duration="1" hotspotX="0.419355" hotspotY="0.509091" />
+                    </animation>
+                    <animation framecount="4" loop="1" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="624459627535371" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\NPC\mega-men\andando1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\NPC\mega-men\andando2.png" />
+                        <frame duration="1" hotspotX="0.52" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\NPC\mega-men\andando3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\NPC\mega-men\andando4.png" />
+                    </animation>
+                    <animation framecount="7" loop="0" name="teleport" pingpong="0" repeatcount="1" repeatto="0" sid="968442045247290" speed="5">
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.507692" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\NPC\mega-men\teleport1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\NPC\mega-men\teleport2.png" />
+                        <frame duration="1" hotspotX="0.517241" hotspotY="0.507692" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\NPC\mega-men\teleport3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\NPC\mega-men\teleport4.png" />
+                        <frame duration="1" hotspotX="0.521739" hotspotY="0.507692" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\NPC\mega-men\teleport5.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="C:\Users\Rael\Desktop\HappyCode General\HappyCode\Courses\Games 2D Construct\Assets\NPC\mega-men\teleport6.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.507692" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="morte" sid="919598475101613">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1204,26 +1261,6 @@
         </object-type>
         <object-type name="igual" sid="404032323380600">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="valor" sid="133196635349586">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="vida" sid="225277438789530">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="4" loop="0" name="vida" pingpong="0" repeatcount="1" repeatto="0" sid="553858950452675" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\00.png">
-                        <collision-poly>
-                            <point x="0.5" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\01.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\02.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\03.png" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="screan" sid="101237869694846">
             <plugin id="Sprite" />

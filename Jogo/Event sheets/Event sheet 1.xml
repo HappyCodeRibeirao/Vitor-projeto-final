@@ -4,88 +4,10 @@
     <name>Event sheet 1</name>
     <events>
         <variable constant="0" name="pontosvida" sid="602713615874443" static="0" type="number">3</variable>
+        <variable constant="0" name="pausarInteract" sid="206033718590628" static="0" type="text">true</variable>
         <variable constant="0" name="moeda" sid="517262996388532" static="0" type="number">0</variable>
         <event-group description="" sid="330422919007257" title="System">
             <sub-events>
-                <event-block any="1" sid="122102897304192">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="545529501997099" type="heroi">
-                            <param id="0" name="Object">espreto</param>
-                        </condition>
-                        <condition id="0" name="On collision with another object" sid="371791057157146" type="heroi">
-                            <param id="0" name="Object">cacto</param>
-                        </condition>
-                        <condition id="0" name="On collision with another object" sid="792868171471395" type="heroi">
-                            <param id="0" name="Object">espetinho</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="0" name="Set ignoring input" sid="739452164320759" type="heroi">
-                            <param id="0" name="Input">1</param>
-                        </action>
-                        <action behavior="Flash" id="0" name="Flash" sid="222472001536626" type="animacao">
-                            <param id="0" name="&apos;On&apos; time">0.1</param>
-                            <param id="1" name="&apos;Off&apos; time">0.1</param>
-                            <param id="2" name="Duration">1.0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="303392183869959" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action disabled="1" id="-26" name="Restart layout" sid="896932078432474" type="System" />
-                        <action disabled="1" id="-21" name="Reset global variables" sid="739853674277064" type="System" />
-                        <action id="-11" name="Subtract from" sid="344608338656264" type="System">
-                            <param id="0" name="Variable">pontosvida</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action behavior="Platform" id="0" name="Set ignoring input" sid="816367447905868" type="heroi">
-                            <param id="0" name="Input">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="115410531619672">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="881089026583908" type="heroi">
-                            <param id="0" name="Object">cacto</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="0" name="Set ignoring input" sid="272251414632076" type="heroi">
-                            <param id="0" name="Input">1</param>
-                        </action>
-                        <action behavior="Flash" id="0" name="Flash" sid="569921836431207" type="animacao">
-                            <param id="0" name="&apos;On&apos; time">0.1</param>
-                            <param id="1" name="&apos;Off&apos; time">0.1</param>
-                            <param id="2" name="Duration">1.0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="272215940491964" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action id="-26" name="Restart layout" sid="562177235787742" type="System" />
-                        <action id="-21" name="Reset global variables" sid="683581151495859" type="System" />
-                    </actions>
-                </event-block>
-                <event-block any="1" disabled="1" sid="289659173832779">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="198347021264808" type="heroi">
-                            <param id="0" name="Object">espetinho</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="0" name="Set ignoring input" sid="661360792703303" type="heroi">
-                            <param id="0" name="Input">1</param>
-                        </action>
-                        <action behavior="Flash" id="0" name="Flash" sid="633273416883738" type="animacao">
-                            <param id="0" name="&apos;On&apos; time">0.1</param>
-                            <param id="1" name="&apos;Off&apos; time">0.1</param>
-                            <param id="2" name="Duration">1.0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="900344353540629" type="System">
-                            <param id="0" name="Seconds">1</param>
-                        </action>
-                        <action id="-26" name="Restart layout" sid="270928062679132" type="System" />
-                        <action id="-21" name="Reset global variables" sid="269349413784773" type="System" />
-                    </actions>
-                </event-block>
                 <event-block sid="555583140956532">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="893477471633819" type="heroi">
@@ -327,6 +249,78 @@
         </event-group>
         <event-group description="" sid="721983014162306" title="objetos">
             <sub-events>
+                <event-group description="" sid="317950557739881" title="Espeto/Cacto">
+                    <sub-events>
+                        <event-block any="1" sid="804265584522157">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="759518721828548" type="heroi">
+                                    <param id="0" name="Object">espreto</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="853978749965160" type="heroi">
+                                    <param id="0" name="Object">cacto</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="699667696671270" type="heroi">
+                                    <param id="0" name="Object">espetinho</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Flash" id="0" name="Flash" sid="313475484300136" type="animacao">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="683844615937477" type="System">
+                                    <param id="0" name="Variable">pontosvida</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="955213632229234">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="987085997944984" type="heroi">
+                                    <param id="0" name="Object">cacto</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="970013612556057" type="heroi">
+                                    <param id="0" name="Input">1</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="811431123839402" type="animacao">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="120223496971660" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="494028119287337" type="System" />
+                                <action id="-21" name="Reset global variables" sid="236712551613085" type="System" />
+                            </actions>
+                        </event-block>
+                        <event-block any="1" disabled="1" sid="518315007162299">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="926801908130297" type="heroi">
+                                    <param id="0" name="Object">espetinho</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="0" name="Set ignoring input" sid="907734827360159" type="heroi">
+                                    <param id="0" name="Input">1</param>
+                                </action>
+                                <action behavior="Flash" id="0" name="Flash" sid="202466981660059" type="animacao">
+                                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                                    <param id="2" name="Duration">1.0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="788610675945389" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="963403240047984" type="System" />
+                                <action id="-21" name="Reset global variables" sid="837819770612063" type="System" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-block sid="867676798117375">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="455891263380322" type="heroi">
@@ -351,11 +345,11 @@
         </event-group>
         <event-group description="" sid="325078576772949" title="inimigo">
             <sub-events>
-                <event-group description="" sid="680622563249752" title="Lesma">
+                <event-group description="" sid="680622563249752" title="Caramuju">
                     <sub-events>
                         <event-block sid="839970961768542">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="877605363555417" type="heroi">
+                                <condition id="0" name="On collision with another object" sid="877605363555417" type="animacao">
                                     <param id="0" name="Object">caramujo</param>
                                 </condition>
                                 <condition id="2" name="Is playing" sid="827624035415809" type="animacao">
@@ -369,7 +363,7 @@
                         <event-block sid="301575502022959">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="238358063900392" type="caramujo">
-                                    <param id="0" name="Object">heroi</param>
+                                    <param id="0" name="Object">animacao</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -390,7 +384,7 @@
                     <sub-events>
                         <event-block sid="551990833774012">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="996847338136092" type="heroi">
+                                <condition id="0" name="On collision with another object" sid="996847338136092" type="animacao">
                                     <param id="0" name="Object">zombie</param>
                                 </condition>
                                 <condition id="2" name="Is playing" sid="568822826000984" type="animacao">
@@ -404,7 +398,7 @@
                         <event-block sid="110371403859111">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="351507774586568" type="zombie">
-                                    <param id="0" name="Object">heroi</param>
+                                    <param id="0" name="Object">animacao</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -527,11 +521,11 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="150759384352033" title="Geleia">
+                <event-group description="" sid="150759384352033" title="Catarro">
                     <sub-events>
                         <event-block sid="822753647776045">
                             <conditions>
-                                <condition id="0" name="On collision with another object" sid="454507509588684" type="heroi">
+                                <condition id="0" name="On collision with another object" sid="454507509588684" type="animacao">
                                     <param id="0" name="Object">catarro</param>
                                 </condition>
                                 <condition id="2" name="Is playing" sid="563987922357649" type="animacao">
@@ -545,7 +539,7 @@
                         <event-block sid="996768897094851">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="565459641536336" type="catarro">
-                                    <param id="0" name="Object">heroi</param>
+                                    <param id="0" name="Object">animacao</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -667,6 +661,38 @@
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="-9" name="Destroy" sid="749130014617579" type="caixaDialogo2" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="492909860982615" title="NPC">
+            <sub-events>
+                <event-block sid="931099521769458">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="362288384268814" type="System">
+                            <param id="0" name="Variable">pausarInteract</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;true&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="784353604642142" type="heroi">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="797144682501108" type="megamen">
+                            <param id="0" name="Animation">&quot;teleport&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="251762157018005" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="409576842335274" type="System">
+                            <param id="0" name="Variable">pausarInteract</param>
+                            <param id="1" name="Value">&quot;false&quot;</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="872231873572930" type="heroi">
+                            <param id="0" name="State">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

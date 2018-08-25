@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Level 01</layout>
-        <layout order="1">Level 02</layout>
+        <layout order="0">Level 01</layout>
+        <layout active="1" order="1">Level 02</layout>
         <event-sheet order="2">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
@@ -23,13 +23,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/inimigos/" />
-        <folder expanded="1" path="object-folder/dialog/" />
+        <folder expanded="1" path="object-folder/inimigos/" />
+        <folder expanded="0" path="object-folder/dialog/" />
         <folder expanded="0" path="object-folder/GUI/" />
-        <folder expanded="0" path="object-folder/objetos/" />
+        <folder expanded="1" path="object-folder/objetos/" />
         <folder expanded="0" path="object-folder/platform/" />
         <folder expanded="1" path="object-folder/heroi/" />
         <folder expanded="0" path="object-folder/bg/" />
+        <folder expanded="1" path="object-folder/NPC/" />
         <folder expanded="0" path="layout-folder/" />
         <folder expanded="0" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -54,12 +55,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/ataque1/" />
         <folder expanded="1" path="animation-folder/controle/" />
         <folder expanded="1" path="animation-folder/play/" />
+        <folder expanded="1" path="animation-folder/vida/" />
         <folder expanded="1" path="animation-folder/moedinha/" />
         <folder expanded="1" path="animation-folder/moedinha2/" />
         <folder expanded="1" path="animation-folder/molapoinng2/" />
         <folder expanded="1" path="animation-folder/boom/" />
         <folder expanded="1" path="animation-folder/bandeiriha/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/ocarina/" />
         <folder expanded="1" path="animation-folder/plataformamadeira/" />
         <folder expanded="1" path="animation-folder/plataformamadeira2/" />
         <folder expanded="1" path="animation-folder/platformaMovimento/" />
@@ -73,12 +76,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/rocha/" />
         <folder expanded="1" path="animation-folder/animacao/" />
         <folder expanded="1" path="animation-folder/heroi/" />
-        <folder expanded="1" path="animation-folder/megamen/" />
         <folder expanded="1" path="animation-folder/sky/" />
         <folder expanded="1" path="animation-folder/nuvem/" />
+        <folder expanded="1" path="animation-folder/megamen/" />
         <folder expanded="1" path="animation-folder/morte/" />
         <folder expanded="1" path="animation-folder/ValorMoeda/" />
-        <folder expanded="1" path="animation-folder/vida/" />
         <folder expanded="1" path="animation-folder/screan/" />
         <folder expanded="1" path="animation-folder/Direita/" />
         <folder expanded="1" path="animation-folder/Esquerda/" />
